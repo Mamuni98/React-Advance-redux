@@ -46,8 +46,7 @@ const cartItemSlice = createSlice({
       }
       state.items = updatedItems;
       
-    },
-    increaseAmount(state, action) {},
+    }
   },
 });
 
