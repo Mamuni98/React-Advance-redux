@@ -4,6 +4,7 @@ const Notification = (props) => {
   const status = useSelector((state) => state.notification.status);
   const title = useSelector((state) => state.notification.title);
   const message = useSelector((state) => state.notification.message);
+  console.log(status, title, message);
   let specialClasses = "";
   if (status === "sending") {
     specialClasses = "";
@@ -24,5 +25,6 @@ const Notification = (props) => {
     </section>
   );
 };
+
 
 export default Notification;

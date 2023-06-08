@@ -25,6 +25,11 @@ const notificationSlice = createSlice({
         state.title = "Error";
         state.message = "Sending cart data failed!";
     },
+    retrieveData(state){
+        state.status = "success";
+        state.title = "Success!";
+        state.message = "Retrieved cart data successfully!";
+    }
   },
 });
 
